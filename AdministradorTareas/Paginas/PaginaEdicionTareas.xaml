@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="AdministradorTareas.PaginaEdicionTareas">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="Tarea: "/>
+			<Entry x:Name="txtNombre"/>
+			<Label Text="Descripción"/>
+			<Editor x:Name="txtDescripcion"/>
+
+			<Picker Title="Tipo de tarea" x:Name="pckTipo">
+				<Picker.Items>
+					<x:String>Escuela</x:String>
+					<x:String>Trabajo</x:String>
+					<x:String>Diversión</x:String>
+					<x:String>Otro</x:String>
+				</Picker.Items>
+			</Picker>
+
+			<Label Text="¿Realizada?"/>
+			<Switch x:Name="swtRealizada" Toggled="MostrarFecha"/>
+			<Label Text="Fecha de realización" x:Name="lblFecha" IsVisible="false"/>
+			<DatePicker x:Name="dtpFecha" IsVisible="false" Format="dd MMMM yyyy"/>
+		</StackLayout>
+	</ContentPage.Content>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem x:Name="btnGuardar" Text="Guardar" Clicked="Guardar" Order="Primary"
+			Priority="0" Icon="guardar.png"/>
+		<ToolbarItem x:Name="btnEliminar" Text="Eliminar" Clicked="Eliminar" Order="Primary"
+			Priority="1" Icon="eliminar.png"/>
+	</ContentPage.ToolbarItems>
+</ContentPage>

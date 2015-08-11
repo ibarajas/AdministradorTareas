@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AdministradorTareas", "AdministradorTareas\AdministradorTareas.shproj", "{D8CABECC-DEBB-459C-9767-A34D6E84D496}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministradorTareas.Droid", "Droid\AdministradorTareas.Droid.csproj", "{AFA425B0-B522-408C-A611-1588D5781105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministradorTareas.UITests", "UITests\AdministradorTareas.UITests.csproj", "{7D2FB84B-AF77-4DDD-9963-27A67F8895BF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7D2FB84B-AF77-4DDD-9963-27A67F8895BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D2FB84B-AF77-4DDD-9963-27A67F8895BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D2FB84B-AF77-4DDD-9963-27A67F8895BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D2FB84B-AF77-4DDD-9963-27A67F8895BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA425B0-B522-408C-A611-1588D5781105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA425B0-B522-408C-A611-1588D5781105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA425B0-B522-408C-A611-1588D5781105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA425B0-B522-408C-A611-1588D5781105}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

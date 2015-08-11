@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{D8CABECC-DEBB-459C-9767-A34D6E84D496}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>AdministradorTareas</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)AdministradorTareas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Paginas\PaginaEdicionTareas.xaml.cs">
+      <DependentUpon>PaginaEdicionTareas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Clases\Tareas.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Clases\BaseDatos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Paginas\PaginaListaTareas.xaml.cs">
+      <DependentUpon>PaginaListaTareas.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Datos\SQLite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Datos\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Clases\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Paginas\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Paginas\PaginaEdicionTareas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Paginas\PaginaListaTareas.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
